@@ -14,7 +14,8 @@ import './App.scss';
 import Navbar from './components/Navbar';
 import HomePage from './components/HomePage';
 import Dashboard from './components/Dashboard';
-import UserPage from './components/UserPage';
+import UserPage from './components/bookshelf/UserPage';
+import NotFound from './components/NotFound';
 
 const App = () => {
   return (
@@ -27,6 +28,8 @@ const App = () => {
           <Route exact path="/dashboard" Component={Dashboard}></Route>
           <Route exact path="/user/:username" Component={UserPage}></Route>
 
+          <Route component={NotFound} />
+          {/* not working as should */}
         </Routes>
       </div>
     </Router>
