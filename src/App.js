@@ -14,6 +14,7 @@ import './App.scss';
 import Navbar from './components/Navbar';
 import HomePage from './components/HomePage';
 import Dashboard from './components/Dashboard';
+import UserPage from './components/UserPage';
 
 const App = () => {
   return (
@@ -22,9 +23,10 @@ const App = () => {
         <Navbar />
 
         <Routes>
-
           <Route exact path="/" Component={HomePage}></Route>
           <Route exact path="/dashboard" Component={Dashboard}></Route>
+          <Route exact path="/user/:username" Component={UserPage}></Route>
+
         </Routes>
       </div>
     </Router>

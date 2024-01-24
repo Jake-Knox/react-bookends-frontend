@@ -75,7 +75,16 @@ $text-black: #000; // black
   }
 
   .Dashboard {
-    color: orangered;
+
+    .user-list {
+      list-style-type: none;
+      width: 100%;
+
+      li {
+        list-style-type: none;
+        text-align: left;
+      }
+    }
 
   }
 

@@ -1,10 +1,12 @@
 import React from 'react';
 
+import UserList from './UserList';
+
 const Dashboard = () => {
     return (
-        <div>
+        <div className='Dashboard'>
             <h1>Dashboard</h1>
-            {/* Add content for the home page */}
+            <UserList />
         </div>
     );
 };
